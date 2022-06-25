@@ -1,12 +1,22 @@
-import "./App.css";
+import React, { useState } from "react";
+
 // import UseMemo from "./components/useMemo";
-import UseRef from "./components/useRef";
+// import UseRef from "./components/useRef";
+
+import "./App.css";
+// import ClassContext from "./components/ClassContext";
+import FunctionalContext from "./components/FunctionalContext";
+import { ThemeProvider } from "./components/ThemeContext";
 
 function App() {
   return (
     <div className="App">
       {/* <UseMemo /> */}
-      <UseRef />
+      {/* <UseRef /> */}
+
+      <ThemeProvider>
+        <FunctionalContext />
+      </ThemeProvider>
     </div>
   );
 }
