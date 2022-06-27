@@ -4,9 +4,10 @@ import React, { useState } from "react";
 // import UseRef from "./components/useRef";
 
 import "./App.css";
+import UseCallback from "./components/useCallback";
 // import ClassContext from "./components/ClassContext";
-import FunctionalContext from "./components/FunctionalContext";
-import { ThemeProvider } from "./components/ThemeContext";
+// import FunctionalContext from "./components/FunctionalContext";
+// import { ThemeProvider } from "./components/ThemeContext";
 
 function App() {
   return (
@@ -14,9 +15,11 @@ function App() {
       {/* <UseMemo /> */}
       {/* <UseRef /> */}
 
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <FunctionalContext />
-      </ThemeProvider>
+      </ThemeProvider> */}
+
+      <UseCallback />
     </div>
   );
 }
